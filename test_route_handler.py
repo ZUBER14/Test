@@ -1,16 +1,16 @@
 
 from playwright.sync_api import Route, Playwright
 
-# NOT_ALLOWED_RESOURCES = (
-#     "image", "font", "stylesheet", "media"
-# )
+NOT_ALLOWED_RESOURCES = (
+    "image", "font", "stylesheet", "media"
+)
 
-# def on_route(route:Route):
-#     if route.request.resource_type in NOT_ALLOWED_RESOURCES:
-#         route.abort()
+def on_route(route:Route):
+    if route.request.resource_type in NOT_ALLOWED_RESOURCES:
+        route.abort()
 
-#     else:
-#         route.continue_()
+    else:
+        route.continue_()
 
 
 def test_browser_context(playwright: Playwright):

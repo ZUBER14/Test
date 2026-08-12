@@ -1,0 +1,11 @@
+# Default owner for everything
+* @ZUBER14
+
+# CI/CD workflows need extra scrutiny
+/.github/workflows/ @ZUBER14
+
+# API testing folder
+/API_TESTING/ @ZUBER14
+
+# Protect the CODEOWNERS file itself (meta, but useful)
+/.github/CODEOWNERS @ZUBER14
